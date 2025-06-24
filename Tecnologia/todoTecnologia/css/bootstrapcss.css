@@ -1,0 +1,33 @@
+.mastermind{
+   background-color: #fc3d6d;
+    color: white; 
+}
+
+.mastermind80{
+    background-color: #fc3d6d;
+    color: white;
+    opacity: 0.8;
+}
+
+.mastermind60{
+    background-color: #fc3d6d;
+    color: gray;
+    opacity: 0.6;
+}
+
+.mastermind40{
+    background-color: #fc3d6d;
+    color: black;
+    opacity: 0.4;
+}
+
+.mastermindgray80{
+    background-color: gray;
+    color: white;
+    opacity: 0.8;
+}
+.mastermindgray60{
+    background-color: gray;
+    color: white;
+    opacity: 0.6;
+}
