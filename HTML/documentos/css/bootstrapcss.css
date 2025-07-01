@@ -1,0 +1,4 @@
+@media (width<= 992px){
+.nav-link.border-start{
+    border-left: 0px  !important; 
+}}
