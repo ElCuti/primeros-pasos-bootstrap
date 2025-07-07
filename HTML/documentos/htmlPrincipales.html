@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="./css/bootstrapcss.css">
+    <link rel="stylesheet" href="./css/prism.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <title>Todo HTML/CSS</title>
+</head>
+
+<body class="bg-secondary-subtle">
+
+    <nav class="navbar bg-dark navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand p-0" href="index.html">
+                <img src="./imagenes/fotoEncabezado.png" alt="Logo Encabezado" height="24"> TODOHTML/CSS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html"><i class="bi bi-house"></i>
+                            Comenzando</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-filetype-html"></i>
+                            HTML
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./htmlEsencial.html">Esencial</a></li>
+                            <li><a class="dropdown-item" href="#">Etiquetas principales</a></li>
+                            <li><a class="dropdown-item" href="#">HTML semántico</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Formularios</a></li>
+                            <li><a class="dropdown-item" href="#">Multimedia</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-filetype-css"></i>
+                            CSS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Esencial</a></li>
+                            <li><a class="dropdown-item" href="#">Colores y fondos</a></li>
+                            <li><a class="dropdown-item" href="#">Box model</a></li>
+                            <li><a class="dropdown-item" href="#">Tipografia</a></li>
+                            <li><a class="dropdown-item" href="#">Grid</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Pseudoelementos y clases</a></li>
+                            <li><a class="dropdown-item" href="#">Flex</a></li>
+                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true"><i class="bi bi-archive"></i>
+                            Modelo de cajas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true"><i class="bi bi-box-arrow-in-right"></i>
+                            Semantico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true"><i class="bi bi-pencil-square"></i>
+                            Diseño</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled border-start" aria-disabled="true"><i class="bi bi-file-font"></i>
+                            Google Fonts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true"><i class="bi bi-emoji-smile"></i> Font
+                            Awesome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled  border-start" aria-disabled="true"><i class="bi bi-github"></i>
+                            Git</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav">
+                    <a class="nav-link"><i class="bi bi-chat"></i>
+                        FeedBack</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="container mt-3" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="text-body link-underline-dark link-underline-opacity-50"
+                    href="index.html">Comenzando</a></li>
+            <li class="breadcrumb-item"><a class="text-body link-underline-dark link-underline-opacity-50"
+                    href="#">HTML</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Etiquetas Principales</li>
+        </ol>
+    </nav>
+    <main class="container mt-3">
+
+        <div class="row">
+            <div class="col">
+                <table class="table table-dark table-striped table-sm">
+                    <thead>
+                        <tr>
+                            <th scope="col">Etiqueta</th>
+                            <th scope="col">Descripción</th>
+                            <th scope="col">Enlace</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>&lt;p&gt;&lt;/p&gt;</code></td>
+                            <td>El elemento p (párrafo) es el apropiado para distribuir el texto en párrafos.</td>
+                            <td class="text-center align-middle"><a
+                                    href="https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/p"><i
+                                        class="bi bi-link-45deg"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;div&gt;&lt;/div&gt;</code></td>
+                            <td>Sirve para crear secciones o agrupar contenidos</td>
+                            <td class="text-center align-middle"><a
+                                    href="https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/div"><i
+                                        class="bi bi-link-45deg"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;span&gt;&lt;/span&gt;</code></td>
+                            <td>Es un contenedor en línea. Sirve para aplicar estilo al texto o agrupar elementos en
+                                línea</td>
+                            <td class="text-center align-middle"><a
+                                    href="https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/span"><i
+                                        class="bi bi-link-45deg"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;img&gt;&lt;/img&gt;</code></td>
+                            <td>El elemento de imagen HTML representa una imagen en el documento</td>
+                            <td class="text-center align-middle"><a
+                                    href="https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/img"><i
+                                        class="bi bi-link-45deg"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;ul&gt;&lt;li&gt;</code></td>
+                            <td>Crea una lista no ordenada</td>
+                            <td class="text-center align-middle"><a
+                                    href="https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/ul"><i
+                                        class="bi bi-link-45deg"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;ol&gt;&lt;li&gt;</code></td>
+                            <td>El elemento ol permite definir listas o viñetas ordenadas ("Ordered List"), bien con
+                                numeración o alfabéticamente</td>
+                            <td class="text-center align-middle"><a
+                                    href="https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/ul"><i
+                                        class="bi bi-link-45deg"></i></a></td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;a&gt;&lt;/a&gt;</code></td>
+                            <td>Crea un enlace a otras páginas de internet, archivos o ubicaciones dentro de la misma
+                                página, direcciones de correo, o cualquier otra URL.</td>
+                            <td class="text-center align-middle"><a
+                                    href="https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/a"><i
+                                        class="bi bi-link-45deg"></i></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col">
+                <div class="card mb-3">
+                    <img src="./imagenes/ejemploP.png" class="card-img-top" alt="Ejemplo de linea HTML">
+                    <div class="card-body">
+                        <p>Las principales partes de nuestro elemento son:</p>
+                        <ul class="card-text">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatem
+                                exercitationem amet ea, rem quas nostrum dolorem modi, consequuntur cupiditate eius,
+                                veritatis libero itaque omnis. Et accusantium quaerat vitae fuga.</li>
+                            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates architecto voluptas
+                                aperiam ex, sit sed quaerat amet veritatis labore temporibus molestias rem illum!
+                                Tenetur ut omnis quam, amet natus cumque!</li>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti modi ipsum est
+                                molestias quis iusto ad saepe facere qui nihil placeat quod incidunt neque fugiat alias,
+                                consequatur error, nam ratione?</li>
+                        </ul>
+                    </div>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    Primer Ejemplo
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <pre class="p-0 m-0">
+                                <code class="language-html">
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8" /&gt;
+&lt;title&gt;Mi pagina de prueba&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;img src="images/firefox-icon.png" alt="Mi imagen de prueba" /&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+                                    </li>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                        aria-controls="flush-collapseTwo">
+                                        Segundo Ejemplo
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <pre class="p-0 m-0">
+                                <code class="language-html">
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8" /&gt;
+&lt;title&gt;Mi pagina de prueba&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;img src="images/firefox-icon.png" alt="Mi imagen de prueba" /&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+                                        </li>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                        aria-controls="flush-collapseThree">
+                                        Tercer Ejemplo
+                                    </button>
+                                </h2>
+                                <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <pre class="p-0 m-0">
+                                <code class="language-html">
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8" /&gt;
+&lt;title&gt;Mi pagina de prueba&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;img src="images/firefox-icon.png" alt="Mi imagen de prueba" /&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <footer class="navbar bg-dark" data-bs-theme="dark">
+        <div class="container-fluid mt-5">
+            <a class="navbar-brand" href="https://getbootstrap.com/docs/5.3/components/navbar/#nav"><small><i
+                        class="bi bi-c-circle"></i> Copyright
+                    Mastermind 2025</small></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./js/prism.js"></script>
+
+</body>
