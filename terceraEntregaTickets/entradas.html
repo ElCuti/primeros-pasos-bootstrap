@@ -17,6 +17,9 @@
         <!--LAYOUT 2 COLUMNAS-->
         <div class="row">
             <div class="col text-bg-light mb-3 mt-5">
+                <div>
+                    <a class="text-decoration-none text-reset" href="./index.html"><i class="bi bi-x-circle"></i></a>
+                </div>
                 <p class="fs-3 text-center">Reserva de entradas</p>
                 <!--INICIO FORMULARIO-->
                 <form class="needs-validation" novalidate="">
@@ -38,9 +41,9 @@
                         </div>
 
                         <div class="col-12">
-                            <label for="username" class="form-label">DNI/NIF</label>
+                            <label for="DNI/NIF" class="form-label">DNI/NIF</label>
                             <div class="input-group has-validation">
-                                <input type="text" class="form-control" id="username" placeholder="DNI/NIF" required="">
+                                <input type="text" class="form-control" id="DNI/NIF" placeholder="DNI/NIF" required="">
                                 <div class="invalid-feedback">
                                     Inserte su documento
                                 </div>
@@ -48,8 +51,8 @@
                         </div>
 
                         <div class="col-12">
-                            <label for="email" class="form-label">Población</label>
-                            <input type="text" class="form-control" id="email" placeholder="Madrid" required>
+                            <label for="Pueblo" class="form-label">Población</label>
+                            <input type="text" class="form-control" id="Pueblo" placeholder="Madrid" required>
                             <div class="invalid-feedback">
                                 Inserte su población
                             </div>
@@ -64,16 +67,16 @@
                         </div>
 
                         <div class="col-12">
-                            <label for="address2" class="form-label">Pais</label>
-                            <input type="text" class="form-control" id="address2" placeholder="España" required>
+                            <label for="pais" class="form-label">Pais</label>
+                            <input type="text" class="form-control" id="pais" placeholder="España" required>
                             <div class="invalid-feedback">
-                                Inserte su Pais
+                                Inserte su pais
                             </div>
                         </div>
 
                         <div class="col-12">
-                            <label for="address2" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="address2" placeholder="example@gmail.com"
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="example@gmail.com"
                                 required>
                             <div class="invalid-feedback">
                                 Inserte su email
@@ -81,16 +84,16 @@
                         </div>
 
                         <div class="col-12">
-                            <label for="address2" class="form-label">Número</label>
-                            <input type="text" class="form-control" id="address2" placeholder="Numero" required>
+                            <label for="number" class="form-label">Número</label>
+                            <input type="text" class="form-control" id="number" placeholder="Numero" required>
                             <div class="invalid-feedback">
-                                Inserte su email
+                                Inserte su número de teléfono
                             </div>
                         </div>
 
                         <div class="col-12 mb-3">
-                            <label for="state" class="form-label">Edad</label>
-                            <select class="form-select" id="state" required="">
+                            <label for="adult" class="form-label">Edad</label>
+                            <select class="form-select" id="adult" required="">
                                 <option value="">Elige...</option>
                                 <option>Menor acompañado (-16 años)</option>
                                 <option>Menor autorizado (+16 años)</option>
@@ -118,11 +121,12 @@
                             momento en privacidad@beachelectrofestival.es.</p>
                         <p>Muchas gracias por confiar en Beach Electro Festival para tu entretenimiento, trataremos de
                             que el evento sea de la máxima calidad para todos nuestros clientes</p>
-                            <p>Recuerda leer las condiciones especiales en caso de ser menor de 18 años</p>
+                        <p>Recuerda leer las condiciones especiales en caso de ser menor de 18 años</p>
                     </div>
                     <!--FIN PEQUEÑO TEXTO CON IMAGEN-->
                 </div>
             </div>
+        </div>
     </main>
 
     <footer class="navbar bg-info-subtle text-center">
@@ -143,3 +147,5 @@
     </footer>
     <script src="./jsTickets/jsTickets.js"></script>
 </body>
+
+</html>
