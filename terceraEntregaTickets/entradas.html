@@ -13,6 +13,133 @@
 </head>
 
 <body>
-    
-<script src="./jsTickets/jsTickets.js"></script>    
+    <main class="container mt-3">
+        <!--LAYOUT 2 COLUMNAS-->
+        <div class="row">
+            <div class="col text-bg-light mb-3 mt-5">
+                <p class="fs-3 text-center">Reserva de entradas</p>
+                <!--INICIO FORMULARIO-->
+                <form class="needs-validation" novalidate="">
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                                Introduce su nombre
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                            <div class="invalid-feedback">
+                                Introduce su apellido
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="username" class="form-label">DNI/NIF</label>
+                            <div class="input-group has-validation">
+                                <input type="text" class="form-control" id="username" placeholder="DNI/NIF" required="">
+                                <div class="invalid-feedback">
+                                    Inserte su documento
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="email" class="form-label">Población</label>
+                            <input type="text" class="form-control" id="email" placeholder="Madrid" required>
+                            <div class="invalid-feedback">
+                                Inserte su población
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address" class="form-label">Ciudad</label>
+                            <input type="text" class="form-control" id="address" placeholder="Madrid" required="">
+                            <div class="invalid-feedback">
+                                Inserte su ciudad
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address2" class="form-label">Pais</label>
+                            <input type="text" class="form-control" id="address2" placeholder="España" required>
+                            <div class="invalid-feedback">
+                                Inserte su Pais
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address2" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="address2" placeholder="example@gmail.com"
+                                required>
+                            <div class="invalid-feedback">
+                                Inserte su email
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="address2" class="form-label">Número</label>
+                            <input type="text" class="form-control" id="address2" placeholder="Numero" required>
+                            <div class="invalid-feedback">
+                                Inserte su email
+                            </div>
+                        </div>
+
+                        <div class="col-12 mb-3">
+                            <label for="state" class="form-label">Edad</label>
+                            <select class="form-select" id="state" required="">
+                                <option value="">Elige...</option>
+                                <option>Menor acompañado (-16 años)</option>
+                                <option>Menor autorizado (+16 años)</option>
+                                <option>Mayor de edad (+18 años)</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Elige una categoria
+                            </div>
+                        </div>
+                    </div>
+                    <button class="w-100 btn btn-primary btn-lg mb-3" type="submit">Reservar</button>
+                </form>
+                <!--FIN FORMULARIO-->
+            </div>
+            <div class="col">
+                <!--INICIO PEQUEÑO TEXTO CON IMAGEN-->
+                <div class="card text-bg-light">
+                    <img src="./imagenes/logoFestival.png" class="card-img-top" alt="tu opinion">
+                    <div class="card-body">
+                        <h5 class="card-title">Tu seguridad importa</h5>
+                        <p class="card-text">En Beach Electro Festival protegemos tu información con protocolo HTTPS/TLS
+                            y pasarelas de pago certificadas (PCI DSS). Solo recogemos los datos imprescindibles
+                            (nombre, email, teléfono y facturación) y nunca almacenamos números de tarjeta. Cumplimos
+                            con el RGPD: puedes ejercer tus derechos de acceso, rectificación o eliminación en cualquier
+                            momento en privacidad@beachelectrofestival.es.</p>
+                        <p>Muchas gracias por confiar en Beach Electro Festival para tu entretenimiento, trataremos de
+                            que el evento sea de la máxima calidad para todos nuestros clientes</p>
+                            <p>Recuerda leer las condiciones especiales en caso de ser menor de 18 años</p>
+                    </div>
+                    <!--FIN PEQUEÑO TEXTO CON IMAGEN-->
+                </div>
+            </div>
+    </main>
+
+    <footer class="navbar bg-info-subtle text-center">
+        <div class="mx-auto">
+            <a target="_blank" class="navbar-brand ms-5" href="#"><small><i class="bi bi-patch-question-fill"></i>
+                    Preguntas Frecuentes</small></a>
+            <a target="_blank" class="navbar-brand ms-5" href="#"><small><i class="bi bi-phone-fill"></i>
+                    Contacto</small></a>
+            <a target="_blank" class="navbar-brand ms-5" href="#"><small><i class="bi bi-globe-europe-africa"></i>
+                    Condiciones Generales</small></a>
+            <a target="_blank" class="navbar-brand ms-5" href="#"><small><i class="bi bi-shield-shaded"></i> Politica de
+                    privacidad</small></a>
+            <a target="_blank" class="navbar-brand ms-5" href="#"><small><i class="bi bi-cookie"></i> Politica de
+                    cookies</small></a>
+            <a target="_blank" class="navbar-brand ms-5" href="#"><small><i class="bi bi-person-fill-exclamation"></i>
+                    Aviso legal</small></a>
+        </div>
+    </footer>
+    <script src="./jsTickets/jsTickets.js"></script>
 </body>
