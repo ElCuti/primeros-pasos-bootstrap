@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
 
@@ -38,22 +38,37 @@
 
     <main class="container mt-5">
         <div class="pt-5 text-center bg-success p-2 text-white bg-opacity-75">
-            <h1 id="titulo">A<span class="text-danger">T</span>L<span class="text-danger">E</span>T<span class="text-danger">I</span>C<span class="text-danger">O</span> D<span class="text-danger">E</span> M<span class="text-danger">A</span>D<span class="text-danger">R</span>I<span class="text-danger">D</span></h1>
+            <h1 id="titulo">A<span class="text-danger">T</span>L<span class="text-danger">E</span>T<span
+                    class="text-danger">I</span>C<span class="text-danger">O</span> D<span class="text-danger">E</span>
+                M<span class="text-danger">A</span>D<span class="text-danger">R</span>I<span
+                    class="text-danger">D</span></h1>
         </div>
         <!--Titulo de categoría-->
         <div class="text-danger pt-5">
             <h2 class="">PLANTILLA</h2>
         </div>
-        <!--CONTENDOR FLEX DE IMAGENES-->
-        <div class="d-flex flex-wrap justify-content-evenly">
-            <!--CARD CONTENEDOR DE IMAGEN-->
-            <div class="d-flex mb-1">
-                <!--IMAGEN-->
-                <div class="border border-dark-subtle">
-                    <img src="./imagenesTeam/Atlético de Madrid1.png" alt="Plantilla" width="700px">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./imagenesTeam/Atlético de Madrid1.png" class="d-block w-100" alt="Opción plantilla 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenesTeam/Atlético de Madrid2.png" class="d-block w-100" alt="Opción plantilla 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenesTeam/Atlético de Madrid3.png" class="d-block w-100" alt="Opción plantilla 3">
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
+
         <div class="d-flex flex-wrap justify-content-evenly">
             <div>
                 <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
@@ -63,7 +78,7 @@
             </div>
             <div>
                 <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
-                    data-bs-placement="bottom" data-bs-content="27,5">
+                    data-bs-placement="bottom" data-bs-content="27,5 años">
                     Edad Media de la Plantilla
                 </button>
             </div>
@@ -287,7 +302,7 @@ Contrato hasta 30/06/2030">
             </div>
             <!--Titulo de categoría-->
             <div class="text-danger pt-5">
-                <h2 id="Mediocentros" class="">MEDIOS</h2>
+                <h2 id="Mediocentros" class="">MEDIOCENTROS</h2>
                 <h3 class="text-body-secondary text-center">Titulares</h3>
             </div>
             <!--CONTENDOR FLEX DE IMAGENES-->
@@ -437,7 +452,7 @@ Contrato hasta 30/06/2030">
 
             <!--Titulo de categoría-->
             <div class="text-danger pt-5">
-                <h2 id="Atacantes" class="">Atacantes</h2>
+                <h2 id="Atacantes" class="">ATACANTES</h2>
                 <h3 class="text-body-secondary text-center">Titulares</h3>
             </div>
             <!--CONTENDOR FLEX DE IMAGENES-->
@@ -1111,6 +1126,7 @@ Contrato hasta 30/06/2030">
                 </div>
             </div>
 
+            <div class="pb-5"></div>
 
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
