@@ -6,15 +6,7 @@ Este repositorio es un reflejo de mi proceso de aprendizaje con este framework. 
 
 ## 📂 ¿Qué vas a encontrar aquí?
 
-El proyecto está compuesto por varios ejercicios divididos en distintas carpetas, donde fui aplicando de forma progresiva lo que iba aprendiendo:
-
-*   **Documentos y Ejercicios HTML (`/HTML/documentos/`):**
-    *   📄 `index.html`: Página principal y punto de entrada de los ejercicios.
-    *   🔐 `login.html`: Práctica de maquetación de un formulario de inicio de sesión utilizando componentes de Bootstrap.
-    *   💬 `feedback.html`: Diseño de un formulario de comentarios y contacto.
-    *   📝 `htmlEsencial.html` y `htmlPrincipales.html`: Páginas donde apliqué estructuras esenciales y principales de HTML combinadas con las clases responsivas del framework.
-*   **Sección de Tecnología (`/Tecnologia/todoTecnologia/`):**
-    *   💻 `index.html`: Un ejercicio enfocado en crear una estructura más completa orientada a una temática tecnológica.
+El proyecto está compuesto por varios ejercicios divididos en distintas carpetas, donde fui aplicando de forma progresiva lo que iba aprendiendo
 
 ## 🛠️ Tecnologías Utilizadas
 
